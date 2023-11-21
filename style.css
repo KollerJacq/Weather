@@ -16,29 +16,112 @@ body {
   margin: 50px auto;
   box-shadow: 0 30px 50px rgba(187, 208, 255, 0.08);
 }
-h1 {
+header {
+  border-bottom: 1px solid rgba(255, 207, 161, 1);
+  padding: 0 0 30px 0;
+}
+.weather-app-city {
   font-family: "Caveat";
   font-weight: 700;
   font-size: 60px;
   color: #fff;
+  margin: 0;
+  line-height: 40px;
 }
-p {
+.weather-app-details {
   font-family: "Caveat", cursive;
-  font-size: 20px;
+  font-size: 25px;
   color: #fff;
+}
+.weather-app-details strong {
+  color: rgb(255, 117, 179);
+  font-weight: 700;
 }
 footer {
   font-family: "PT Mono", monospace;
+  font-size: 13px;
   text-align: center;
   color: #848edc;
+  border-top: 1px solid rgba(255, 207, 161, 1);
+  padding: 30px 0 0 0;
 }
 a {
   color: #6448ad;
   text-decoration: none;
 }
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+
+main {
+  padding: 30px 0;
+}
 .temperature {
+  display: flex;
   color: #fff;
   font-family: "Caveat", cursive;
   font-weight: 700;
   font-size: 50px;
+}
+.temp-container {
+  width: 90px;
+  height: 90px;
+  background: rgb(255, 207, 161);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 207, 161, 1) 0%,
+    rgba(255, 157, 201, 1) 36%,
+    rgba(103, 135, 205, 1) 85%
+  );
+  padding: 30px;
+  border-radius: 90px;
+  margin-left: 0 auto;
+  box-shadow: 0 30px 50px rgba(187, 208, 255, 0.08);
+}
+.search-form-input {
+  background-color: #deddf7;
+  border: none;
+  border-radius: 30px;
+  width: 80%;
+  padding: 15px;
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+input::placeholder {
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+}
+.search-form-button {
+  font-family: "Caveat", cursive;
+  font-size: 20px;
+  border: none;
+  background-color: #deddf7;
+  color: #fff;
+  border-radius: 30px;
+  padding: 10px;
+  width: 15%;
+}
+.icon {
+  font-size: 40px;
+  margin-bottom: 70px;
+  margin-top: -15px;
+  margin-left: -10px;
+}
+.temp {
+  font-size: 70px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-right: 60px;
+  margin-left: -35px;
+}
+.unit {
+  font-size: 25px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-right: 80px;
+  margin-left: -55px;
 }
