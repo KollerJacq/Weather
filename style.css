@@ -75,8 +75,13 @@ main {
   );
   padding: 30px;
   border-radius: 90px;
+  border: 3px solid rgb(255, 188, 218);
   margin-left: 0 auto;
   box-shadow: 0 30px 50px rgba(187, 208, 255, 0.08);
+  transition: all 200ms ease-in-out;
+}
+.temp-container:hover {
+  transform: scale(1.1);
 }
 .search-form-input {
   background-color: #deddf7;
@@ -103,6 +108,11 @@ input::placeholder {
   border-radius: 90px;
   padding: 16px;
   width: 20%;
+  transition: all 200ms ease-in-out;
+}
+.search-form-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .icon {
   width: 70px;
@@ -123,4 +133,61 @@ input::placeholder {
   margin-top: 25px;
   margin-right: 80px;
   margin-left: -55px;
+}
+.weather-forecast {
+  display: flex;
+  font-family: "Caveat", cursive;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+.weather-forecast:hover {
+  transform: scale(1.1);
+}
+.weather-forecast-day {
+  background: rgb(255, 207, 161);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 207, 161, 1) 0%,
+    rgba(255, 157, 201, 1) 36%,
+    rgba(103, 135, 205, 1) 85%
+  );
+  border-radius: 90px;
+  border: 3px solid rgb(255, 188, 218);
+  margin-left: 0 auto;
+  box-shadow: 0 30px 50px rgba(187, 208, 255, 0.08);
+  margin-top: 20px;
+  padding: 0 20px;
+  width: 40px;
+  position: relative;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.weather-forecast-icon {
+  width: 38px;
+  text-align: center;
+  position: relative;
+  left: 7px;
+}
+.weather-forecast-temperatures {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+}
+.weather-forecast-temperature-max {
+  color: #848edc;
+  padding: 0 10px;
+}
+.weather-forecast-temperature-min {
+  color: #fff;
+  padding: 0 5px;
 }
